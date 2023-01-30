@@ -1,0 +1,15 @@
+<h1>Ver Heroe</h1>
+<hr>
+
+<div class="row">
+
+    <div class="col-sm-8">
+        <img src="{{ heroe.thumbnail.path }}.{{ heroe.thumbnail.extension }}" class="card-img-top" alt="...">
+    </div>
+
+    <div class="col-sm-4">
+        <h1 class="card-title">{{ heroe.name }}</h1>
+        <p class="card-text">{{ heroe.description == "" ? "Sin Información" : heroe.description }}</p>
+    </div>
+
+</div>

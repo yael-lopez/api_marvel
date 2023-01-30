@@ -1,0 +1,15 @@
+<h1>Por Serie</h1>
+<hr>
+
+<div class="columna">
+
+    <div class="card mt-2" *ngFor="let serie of series; let i = index">
+        <img src="{{ serie.thumbnail.path }}.{{ serie.thumbnail.extension }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ serie.name }}</h5>
+          <p class="card-text">{{ serie.description == "" ? "Sin Información" : serie.description }}</p>
+          <a roueterLink="" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+</div>

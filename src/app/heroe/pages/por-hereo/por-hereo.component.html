@@ -1,0 +1,15 @@
+<h1>Por Heroe</h1>
+<hr>
+
+<div class="columna">
+
+    <div class="card mt-2" *ngFor="let heroe of heroes; let i = index">
+        <img src="{{ heroe.thumbnail.path }}.{{ heroe.thumbnail.extension }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ heroe.name }}</h5>
+          <p class="card-text">{{ heroe.description == "" ? "Sin Información" : heroe.description }}</p>
+          <a routerLink="heroe/{{heroe.id}}" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+</div>
